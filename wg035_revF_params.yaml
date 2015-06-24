@@ -1,0 +1,22 @@
+# Generic Force/Torque amplifier parameters for WG035 rev F board 
+ft_params:
+  # Offset of ADC values, for revF boards assume offsets are 0 and
+  # have software zero data before use
+  offsets: 
+    -  0.0
+    -  0.0
+    -  0.0
+    -  0.0
+    -  0.0
+    -  0.0
+  # use ideal gain for each circuit for now
+  # in future, we may calibrate gain of each opamp
+  # ideal gain = 1.0 + (49.4k / Rg)    
+  # for circuit Rg = 1.0k
+  gains:  
+    - 50.34
+    - 50.34
+    - 50.34
+    - 50.34
+    - 50.34
+    - 50.34
